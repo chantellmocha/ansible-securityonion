@@ -1,15 +1,15 @@
-# Ansible playbooks for Security Onion deployment
+# [DRAFT] Ansible playbooks for Security Onion deployment
 
 The purpose of this project is to facilitate the deployment and management of a Security Onion cluster using Ansible.
 
 ## Getting Started
 
-Security Onion v16.04.4.1 introduced a new architecture, and I strongly recommend to read the [Security Onion Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki) before using these playbooks.
+Read the [Security Onion Wiki]([https://docs.securityonion.net/]) before using these playbooks.
 
 
 ### Prerequisites
 
-These playbooks are design to run on a Ubuntu Server 16.04 OS. Also, make sure to have a working Ansible installation.
+These playbooks are design to run on an Oracle Server OS. Also, make sure to have a working Ansible installation.
 
 
 ### Installing
@@ -17,7 +17,7 @@ These playbooks are design to run on a Ubuntu Server 16.04 OS. Also, make sure t
 Start by cloning the repo, and populate the hosts file with your own servers, and provide the master server IP address in the [all:vars] section.
 
 ```
-git clone https://github.com/antlamont/ansible-securityonion.git
+git clone https://github.com/chantellmocha/ansible-securityonion.git
 ```
 
 Then, edit the setup configuration files in /roles/playbook/files/sosetup.conf to set up the ssh username you're going to use. You can also customize these files to enable/disable any options you want or do not want.
